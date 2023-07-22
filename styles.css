@@ -1,0 +1,1134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color: purple;
+    margin: 0 13rem;
+    min-height: 100vh;
+    background-color: var(--color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    background-color: var(--color);
+}
+
+.right-side-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.right-side-nav ul li a:hover {
+    color: lightblue;
+}
+
+.right-side-socials, .right-side-text, .right-side-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-side-socials {
+    column-gap: 1rem;
+}
+
+.right-side-nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.right-side-nav {
+    column-gap: 1rem;
+}
+
+.right-side-text {
+    column-gap: 1rem;
+}
+
+.right-side-nav div.vertical {
+    width: 10px;
+    height: 10px;
+    color: black;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+nav > div.logo {
+    flex: auto;
+}
+
+img.nav-logo {
+    width: 2rem;
+}
+
+img.social {
+  width: 1.5rem;
+}
+
+/* end of navbar css */
+
+section.home {
+    display: flex;
+    height: 93.5vh;
+    background-color: var(--color);
+    width: 100%;
+    color: white;
+}
+
+.home-left-side,.home-right-side {
+    --light-blue: var(--light-blue);
+    flex: auto;
+}
+
+.home-left-side {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home-left-side p.name, .home-left-side p.surname {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.home-left-side .name {
+    margin-bottom: 4rem;
+}
+
+.home-left-side .surname {
+    margin-bottom: 2rem;
+}
+
+.home-left-side p.surname {
+    color: lightblue;
+}
+
+.home-left-side p.location {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button.connected {
+    border: none;
+    padding: .8rem 2.2rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    background-color: lightblue;
+    color: inherit;
+    margin-top: 1rem;
+    transition: background-color,color .2s;
+    cursor: pointer;
+}
+
+button.connected:hover {
+    background-color: white;
+    color: lightblue;
+}
+
+.home-right-side {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+p.title {
+    font-weight: bold;
+}
+
+.home-right-side div.background {
+    width: 25rem;
+    height: 25rem;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13rem;
+    position: relative;
+}
+
+.home-right-side div.background img {
+   width: 24rem;
+   position: absolute;
+   top: -8rem;
+}
+
+/* end of home section */
+
+section.strenghts {
+    display: flex;
+    height: 42vh;
+    justify-content: space-between; 
+}
+
+section.strenghts .strenght-card {
+   padding: 1.5rem;
+   display: flex;
+   background-color: rgb(182, 82, 182);
+   flex-direction: column;
+   width: 22vw;
+   gap: 1.5rem;
+   border-radius: .5rem;
+   line-height: 1.2rem;
+   margin-bottom: 1rem;
+   cursor: pointer;
+   transition: background-color, color .2s;
+}
+
+section.strenghts .strenght-card:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.strenght-card > img {
+    width: 3rem;
+}
+
+/* end of strenghts section */
+
+section.about-me {
+    height: 100vh;
+    width: 100%;
+    padding-top: 4rem;
+}
+
+ .intro .small-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: lightblue;
+}
+
+section.about-me .intro {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro > p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.about-me-bottom {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.about-me-bottom-left {
+    width: 50%;
+    position: relative;
+}
+
+.about-me-bottom-left .top, .about-me-bottom .bottom {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+}
+
+.image-wrapper1 {
+    width: 58%;
+    height: 19rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-bottom-left .image1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.about-me-bottom-left .image2 {
+    width: 5rem;
+    background-color: lightblue;
+    height: 5rem;
+    border-radius: .7rem;
+}
+
+.about-me-bottom-left .image3 {
+    width: 12em;
+    height: 12rem;
+    border-radius: 1rem;
+}
+
+.about-me-bottom-left .image4 {
+    width: 5rem;
+}
+
+.about-me-bottom-left .bottom {
+    position: absolute;
+    top: 15rem;
+}
+
+.about-me-bottom-left .bottom img {
+    align-self: center;
+}
+
+.about-me-bottom-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 1rem;
+}
+
+.white {
+    color: white;
+}
+
+.about-me-bottom-right .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+div.table {
+    display: flex;
+}
+
+.table-left, .table-right {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   padding: 1.2rem;
+}
+
+.table-item {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.table-left {
+   border-left: 1px solid black;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   border-right: 1px solid black;
+   border-top-left-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+   border-color: lightgray;
+}
+
+.table-right {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-color: lightgray;
+}
+
+.table-item-title {
+    font-weight: bold;
+}
+
+button.cv{
+    align-self: flex-start;
+    border: none;
+    padding: .8rem 2.2rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    background-color: lightblue;
+    transition: background-color,color .2s;
+    cursor: pointer;
+}
+
+button.cv:hover {
+    background-color: white;
+    color: lightblue;
+}
+
+/* end of about me section */
+
+section.work-done {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    column-gap: 1rem;
+}
+
+.work-done-card div.container {
+    display: flex;
+    column-gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+p.number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p.first-word, p.second-word {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.work-done-card div.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.work-done-card {
+  flex: auto;
+  height: 70%;
+  background-color: rgb(182, 82, 182);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+div.work-done-card:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .8);
+}
+
+.work-done-card p.number {
+    grid-row: 1/span2;
+    align-self: center;
+    color: lightblue;
+}
+
+/* end of workdone section */
+
+section.skills {
+    height: 70vh;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.skills-top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    margin-bottom: .7rem;
+}
+
+section .skills-bottom {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    gap: 2rem;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  row-gap: .4rem;
+}
+
+.language-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.language-bottom {
+    display: grid;
+    grid-template-columns: 1fr .25fr;
+    grid-template-rows: .4rem;
+    grid-auto-rows: .4rem;
+}
+
+.language-bottom .color {
+    background-color: rgb(47, 121, 146);
+    border-radius: .3rem 0 0 .3rem;
+}
+
+.language-bottom .filler {
+    background-color: lightgray;
+    border-radius: 0 .3rem .3rem 0;
+}
+
+/* end of skills section  */
+section.services {
+    height: 110vh;
+    width: 100%;
+}
+
+section.services .services-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section.services .services-bottom {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-auto-rows: 18rem;
+   gap: 1rem;
+}
+
+.services-bottom .services-card {
+    background-color: rgb(182, 82, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem;
+    row-gap: .5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color, color .2s;
+}
+
+.services-bottom .services-card:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+ b {
+    font-size: 1.3rem;
+}
+
+.service-card-icon {
+    width: 8rem;
+    flex: auto;
+}
+
+/* end of services section  */
+
+section.resume {
+    width: 100%;
+    height: 100vh;
+    font-family: inherit;
+}
+
+.resume-top b {
+    color: lightblue;
+}
+
+section.resume div.resume-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+div.resume-top p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.resume-top b {
+    color: lightblue;
+    margin-bottom: 1rem;
+}
+
+div.resume-bottom {
+    margin-top: 2rem;
+    width: 100%;
+    height: 90%;
+}
+
+div.resume-bottom .resume-grid{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+
+div.resume-bottom-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+div.resume-bottom-title p {
+    flex: auto;
+}
+
+.resume-grid .left, .resume-grid .right {
+   height: 100%;
+}
+
+div.resume-grid .left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.grid-icon {
+    width: 8rem;
+}
+
+.one-row-1, .one-row-2, .two-rows-1, .two-rows-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-icon img {
+    width: 2rem;
+}
+
+.left .left-left {
+   width: 8rem;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.circle-icon {
+    height: 4.1rem;
+    width: 4.1rem;
+    background-color: lightblue;
+    border-radius: 2.1rem;
+}
+
+.horizontal-line {
+    background-color: lightgray;
+    height: 6rem;
+    width: .1rem;
+}
+
+.left .left-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.left .left-right > div {
+  height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.left-right .title {
+   font-size: 1.4rem;
+   font-weight: bold;
+}
+
+.left-right div.top {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.left-right .year {
+   font-size: 1.1rem;
+}
+
+.left-right .middle {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.left-right .bottom {
+   width: 75%;
+}
+
+/* end of resume section */
+
+section.services-offered {
+    width: 100%;
+    height: 160vh;
+    position: relative;
+    z-index: 2;
+}
+
+.services-offered b {
+    color: lightblue;
+    margin-bottom: 1rem;
+}
+
+.services-offered .top-text {
+    margin-bottom: 3rem;
+}
+
+section.services-offered .top-text p {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+section.services-offered .top-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.services-offered-bottom {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
+
+.services-offered-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services-offered-nav p {
+     font-size: 1.2rem;
+    font-weight: 400;
+}
+
+section.services-offered .left-grid, section.services-offered .right-grid {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(3,1fr);
+   gap: 1rem;
+}
+
+.left-grid .two-rows-1, .right-grid .two-rows-1 {
+    background-color: orange;
+    grid-row: 1/3;
+    border-radius: 1.5rem;
+}
+
+.left-grid .one-row-1, .right-grid .one-row-1 {
+    background-color: aqua;
+    border-radius: 1.5rem;
+}
+
+.left-grid .two-rows-2, .right-grid .two-rows-2 {
+    background-color: orange;
+    grid-row: 2/4;
+    border-radius: 1.5rem;
+}
+
+.left-grid .one-row-2, .right-grid .one-row-2 {
+    background-color: aqua;
+    border-radius: 1.5rem;
+}
+
+section.testimonial {
+    width: 100%;
+    height: 125vh;
+    position: relative;
+    z-index: 4;
+}
+
+section.testimonial .large-text {
+    line-height: 2.5rem;
+}
+
+section.testimonial div.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.selected {
+    color: lightblue;
+}
+
+.qoute {
+    font-size: 8rem;
+    font-weight: 600;
+    color: lightblue;
+}
+
+.testimonial .bottom {
+    width: 100%;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.left .name {
+    font-weight: bold
+}
+
+.testimonial .card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.testimonial .large-text {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+
+.card .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.dots {
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    --value: .5rem;
+    width: var(--value);
+    height: var(--value);
+    border-radius: var(--value);
+    background-color: lightgray;
+}
+
+.brands {
+    width: 100%;
+    height: 25vh;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    background-color: rgb(182, 82, 182);
+}
+
+img.brand {
+    width: 5rem;
+}
+
+/* end of .testimonial section  */
+
+section.blog {
+    width: 100%;
+    height: 80vh;
+}
+
+section.blog .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.blog .bottom {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    column-gap: 1rem;
+}
+
+.blog-card {
+  background-color: rgb(182, 82, 182);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .8);
+}
+
+.blog > div.bottom {
+    margin-top: 2rem;
+}
+
+.blog-card > img {
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.bottom .blog-card .bottom1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    gap: .5rem;
+}
+
+.blog-card .title-and-date {
+    display: flex;
+    gap: .5rem;
+    font-weight: bold;
+}
+
+.blog-card .date {
+   color: lightgray;
+}
+
+.blog-card .content {
+    font-weight: bold;
+}
+
+section.contact {
+    height: 110vh;
+    width: 100%;
+}
+
+section.contact .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.contact .bottom {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.bottom .contact-left {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+.bottom .contact-right {
+    background-color: purple;
+    flex: auto;
+    width: 50%;
+}
+
+.contact-card .circle {
+    width: 4rem;
+    height: 4rem;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem
+}
+
+.contact-card img {
+  width: 3rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .7rem;
+}
+
+.contact-card .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.contact-right .row-grp {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 .5rem;
+  gap: 1rem;
+}
+
+input[type='text'] {
+    padding: .8rem;
+    width: 120%;
+} 
+
+input[type='text'] , textarea {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: .3rem;
+}
+
+form button {
+    background-color: lightblue;
+    width: 30%;
+    padding: .8rem;
+    border-radius: 1.2rem;
+    border: none;
+    transition: background-color, color .2s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: black;
+    color: lightblue;
+}
+
+.news-letter {
+    background-color: rgb(182, 82, 182);
+    height: 12rem;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.news-letter .left, .news-letter .right {
+    flex:auto;
+}
+
+.news-letter .left {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.news-letter .small-text {
+    color: lightblue;
+}
+
+.news-letter div + p {
+    font-size: .8rem;
+}
+
+.news-letter .right div {
+    display: flex;
+
+}
+.news-letter .right > div {
+    border: 1.5px solid;
+    border-radius: .5rem;
+
+}
+
+.news-letter .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon a {
+    text-decoration: none;
+    color: white;
+}
+
+.news-letter .right .icon {
+    height: 3rem;
+    width: 3.5rem;
+    margin-right: .2rem;
+}
+
+.news-letter input {
+    border: none;
+}
+
+.news-letter input:active, .news-letter input:focus {
+    border: none;
+}
+
+/* end of news letter */
+
+footer {
+    --gap: 1rem;
+    height: 40vh;
+    width: 100%;
+}
+
+footer .footer-top {
+    margin-top: 5rem;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img.logo {
+    width: 5rem;
+}
+
+.text-row {
+    display: flex;
+}
+
+.segment {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.text-row .left {
+  gap: var(--gap);
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  width: 0;
+}
+
+.text-row .right {
+  flex: 1 1 auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.segment .details {
+    display: flex;
+    gap: .5rem;
+}
+
+.right .segment {
+    flex: auto;
+}
+
+footer > div.bottom {
+   width: 100%;
+   height: 3rem;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 3rem;
+}
+
+.bottom .footer-bottom-right {
+    display: flex;
+    gap: 1rem;
+}
